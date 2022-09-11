@@ -1,15 +1,33 @@
+# Set 1: 10,2,3,2,4,2,5
+# Set 2 20,12,13,12,14,12,15
+  
+  # Direction: 1. For each set commute the mean, medium, and mode under Central tendency 
+  #           2. For each set, compute the range, interquartile,variance, standar deviation under Variation.
+
+
+  # creating vector
+ 
+ #for set 1 compute the mean, median, mode 
+
 >     x <-c(10,2,3,2,4,2,5)
 >     y <-c(20,12,13,12,14,12,15)
 >     mean(x)
 [1] 4
 >     median(x)    
 [1] 3
+
+    # for mode, first create the mode function
+
 >     mode <- function(x) {
 +       uniqx <- unique(x)
 +       uniqx [which.max(tabulate(match(x,uniqx)))]
 +       }
 >     mode(x)
 [1] 2
+
+    #now compute the range, interquartile, variance, standard deviation
+
+
 >     range(x)
 [1]  2 10
 >     quantile(x)
@@ -19,6 +37,9 @@
 [1] 8.333333
 >     sd(x)
 [1] 2.886751
+
+    # now for set 2, compute the mean,median and mode
+
 >     mean(y)
 [1] 14
 >     median(y)    
@@ -29,6 +50,9 @@
 +     }
 >     mode(y)
 [1] 12
+
+  # computing the range, interquartile, variance, standard deviation for set 2
+
 >     range(y)
 [1] 12 20
 >     quantile(y)
@@ -39,7 +63,7 @@
 >     sd(y)
 [1] 2.886751
 
-             # when computing the variance and the standard deviation on each set we find that the results are identical despite the numbers in set 2 is much greater than set 1.
-    # when looking at our quantile, we see that set2 is much higher than set 1
-    # for mean, median, mode and range, we find that both results are rhyming, the results on set1 has the same numbers on the results of set2
+# when computing the variance and the standard deviation on each set we find that the results are identical despite the numbers in set 2 is much greater than set 1.
+# when looking at our quantile, we see that set2 is much higher than set 1
+# for mean, median, mode and range, we find that both results are rhyming, the results on set1 has the same numbers on the results of set2
 
