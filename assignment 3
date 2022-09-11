@@ -7,10 +7,13 @@
 
   # creating vector
  
- #for set 1 compute the mean, median, mode 
+ 
 
 >     x <-c(10,2,3,2,4,2,5)
 >     y <-c(20,12,13,12,14,12,15)
+
+#for set 1 compute the mean, median, mode 
+
 >     mean(x)
 [1] 4
 >     median(x)    
