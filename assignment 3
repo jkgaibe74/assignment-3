@@ -80,5 +80,5 @@
 
 # when computing the variance and the standard deviation on each set we find that the results are identical despite the numbers in set 2 is much greater than set 1.
 # when looking at our quantile, we see that set2 is much higher than set 1, but with the interquartile both have the same results.
-# for mean, median, mode and range, we find that both results are rhyming, the results on set1 has the same numbers on the results of set2.
+# for mean, median, mode and range, we find that both results are rhyming, the results on set1 has the same numbers on the results of set2 but value of set2 and the results are higher..
 
